@@ -135,10 +135,10 @@ let totalAmount = ticketPrice * numberOfTickets;
 let gst = totalAmount * 0.05;
 let finalAmount = totalAmount + gst;
 
-console.log("Ticket Price: ₹" + ticketPrice + "<br>");
-console.log("Number of Tickets: " + numberOfTickets + "<br>");
-console.log("Total Amount: ₹" + totalAmount + "<br>");
-console.log("GST (5%): ₹" + gst + "<br>");
+console.log("Ticket Price: ₹" + ticketPrice );
+console.log("Number of Tickets: " + numberOfTickets );
+console.log("Total Amount: ₹" + totalAmount );
+console.log("GST (5%): ₹" + gst );
 console.log("Final Amount: ₹" + finalAmount);
 
 
@@ -282,16 +282,22 @@ for (let i = 1; i <= 10; i++) {
 
 
 
-let Password = prompt("Enter Password:");
+let password1 = prompt("Enter Password:");
 
-let length = Password.length;
+let count = 0;
 
-if (length < 6) {
-    console.log("Password Strength: Weak");
-} else if (length <= 10) {
-    console.log("Password Strength: Medium");
-} else {
-    console.log("Password Strength: Strong");
+for (let ch of password1) {
+    count++;
+}
+
+if (count < 6) {
+    console.log("Weak Password1");
+}
+else if (count <= 10) {
+    console.log("Medium Password1");
+}
+else {
+    console.log("Strong Password1");
 }
 
 
@@ -321,19 +327,19 @@ console.log("Bonus Amount: ₹" + bonusAmount);
 
 
 
-let count = 10;
+let count1 = 10;
 
-while (count >= 1) {
-    console.log(count);
-    count--;
+while (count1 >= 1) {
+    console.log(count1);
+    count1--;
 }
 
 console.log("Happy New Year");
 
 
 
-let degreeCompleted = prompt("Degree Completed? (yes/no)").toLowerCase();
-let communication = prompt("Communication Skill (good/poor)").toLowerCase();
+let degreeCompleted = prompt("Degree Completed? (yes/no)");
+let communication = prompt("Communication Skill (good/poor)");
 let technicalScore = Number(prompt("Enter Technical Score:"));
 
 if (degreeCompleted === "yes") {
