@@ -126,6 +126,25 @@ if (attendancePercentage >= 75) {
 }
 
 
+
+let ticketPrice = 500;
+
+let numberOfTickets = Number(prompt("Enter Number of Tickets:"));
+
+let totalAmount = ticketPrice * numberOfTickets;
+let gst = totalAmount * 0.05;
+let finalAmount = totalAmount + gst;
+
+console.log("Ticket Price: ₹" + ticketPrice + "<br>");
+console.log("Number of Tickets: " + numberOfTickets + "<br>");
+console.log("Total Amount: ₹" + totalAmount + "<br>");
+console.log("GST (5%): ₹" + gst + "<br>");
+console.log("Final Amount: ₹" + finalAmount);
+
+
+
+
+
 let foodCost = Number(prompt("Enter Food Cost:"));
 
 let discount = 0;
@@ -225,15 +244,15 @@ let experience = Number(prompt("Enter Experience (Years):"));
 if (age >= 21) {
     if (salary1 >= 25000) {
         if (experience >= 2) {
-            document.writeln("Eligible for Loan");
+           console.log("Eligible for Loan");
         } else {
-            document.writeln("Not Eligible: Minimum 2 Years Experience Required");
+           console.log("Not Eligible: Minimum 2 Years Experience Required");
         }
     } else {
-        document.writeln("Not Eligible: Salary Must Be ₹25000 or More");
+       console.log("Not Eligible: Salary Must Be ₹25000 or More");
     }
 } else {
-    document.writeln("Not Eligible: Age1 Must Be 21 or Above");
+   console.log("Not Eligible: Age1 Must Be 21 or Above");
 }
 
 
