@@ -299,7 +299,7 @@ console.log(offers.next());
 let employees = [
     { id: 1, name: "Sai", salary: 25000 },
     { id: 2, name: "Ram", salary: 30000 },
-    { id: 3, name: "Abhi", salary: 40000 }
+    { id: 3, name: "pavan", salary: 40000 }
 ];
  
 console.log("Employee Names");
